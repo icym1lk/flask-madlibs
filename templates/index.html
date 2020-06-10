@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Mad Libs Generator{% endblock %}
+
+{% block content %}
+    <h1>Mad Libs</h1>
+    <form action="/story" class="pure-form pure-form-aligned">
+        <fieldset>
+            <div class="pure-control-group">
+                <label for="first_word">{{first_word.capitalize()}}: </label>
+                <input type="text" name="first_word" id="first_word">
+            </div>
+            <div class="pure-control-group">
+                <label for="second_word">{{second_word.capitalize()}}: </label>
+                <input type="text" name="second_word" id="">
+            </div>
+            <div class="pure-control-group">
+                <label for="third_word">{{third_word.capitalize()}}: </label>
+                <input type="text" name="third_word" id="">
+            </div>
+            <div class="pure-control-group">
+                <label for="fourth_word">{{fourth_word.capitalize()}}: </label>
+                <input type="text" name="fourth_word" id="">
+            </div>
+            <div class="pure-control-group">
+                <label for="fifth_word">{{fifth_word.capitalize()}}: </label>
+                <input type="text" name="fifth_word" id="">
+            </div>
+            <div class="pure-control-group">
+                <label for="template">Choose your story</label>
+                <select name="template">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            
+            <button class="pure-button pure-button-primary">Submit</button>
+        </fieldset>
+    </form>
+{% endblock %}
+

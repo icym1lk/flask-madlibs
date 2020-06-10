@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Your Story{% endblock %}
+
+{% block content %}
+
+    <h1>Story Time!</h1>
+    <p>{{newStory}}</p>
+    <form action="/"><button class="pure-button button-secondary">Make New Story</button></form>
+    
+{% endblock %}
